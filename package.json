@@ -1,0 +1,29 @@
+{
+  "name": "",
+  "description": "Performing repetitive tasks like minification, compilation, unit testing, linting, making your job easier.",
+  "version": "0.1.5",
+  "author": "Ian Pansensoy",
+  "copyright": "2014",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "latest",
+    "gulp-autoprefixer": "latest",
+    "gulp-concat": "latest",
+    "gulp-imagemin": "latest",
+    "gulp-minify-css": "latest",
+    "gulp-compass": "latest",
+    "gulp-uglify": "latest",
+    "gulp-jshint":"latest",
+    "gulp-rename":"latest",
+    "gulp-notify":"latest",
+     "jshint-stylish": "latest",
+     "gulp-clean": "latest",
+
+
+
+
+  },
+  "engines": {
+    "node": "latest"
+  }
+}
