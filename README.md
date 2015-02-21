@@ -7,6 +7,9 @@ Frontend development on steroids
 In one word: automation. The less work you have to do when performing repetitive tasks like minification, compilation, unit testing, linting, etc, the easier your job becomes. After you've configured it, a task runner can do most of that mundane work for you—and your team—with basically zero effort.
 
 ###Why use Gulp?
+![alt tag](https://raw.githubusercontent.com/gulpjs/artwork/master/gulp-2x.png)
+
+
 Easy to use
 
 By preferring code over configuration, gulp keeps things simple and makes complex tasks manageable.
