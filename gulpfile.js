@@ -17,6 +17,9 @@ var processhtml = require('gulp-processhtml');
 var uncss = require('gulp-uncss');
 var header = require('gulp-header');
 var pkg = require('./package.json');
+var browserSync = require('browser-sync');
+var reload = browserSync.reload;
+
 var banner = [
         '/*!\n' +
         ' * <%= pkg.title %>\n' +
@@ -158,14 +161,30 @@ gulp.task('uncss', function() {
 });
 
 
+gulp.task('serve', ['compass'], function () {
+  browserSync({
+    notify: false,
+    port:9002,
+    browser: ["chrome","firefox"],
+    ui: {
+        port: 9003
+    },
 
-gulp.task('watch', function() {
+    // Run as an https by uncommenting 'https: true'
+    // Note: this uses an unsigned certificate which on first access
+    //       will present a certificate warning in the browser.
+    // https: true,
+    server: ['app']
+  });
 
-    gulp.watch('app/assets/js/**/*.js', ['lint']);
-    gulp.watch(['app/assets/sass/*.scss', 'app/assets/img/**/*.*', 'app/assets/img/*.*'], ['compass']);
+  gulp.watch(['app/**/*.html'], reload);
+  gulp.watch(['app/assets/sass/**/*.scss'], ['compass', reload]);
+  gulp.watch(['app/assets/js/**/*.js'], ['lint',reload]);
+  gulp.watch(['app/assets/img/**/*.*'], reload);
 });
 
-gulp.task('default', ['compass', 'lint','watch']);
+
+gulp.task('default', ['compass', 'lint','serve']);
 
 gulp.task('build', function(cb) {
     gulpsequence(['clean', 'images', 'scripts', 'compass-deploy', 'html', 'uncss', 'copy'])(cb);

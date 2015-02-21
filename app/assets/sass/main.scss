@@ -2,7 +2,15 @@
 @import "icons/*.png";
 
 @include all-icons-sprites;
+.gulp-bg{
+    background:#cf4646;
+    text-align: center;
 
+}
+.marketing img{
+
+    display: inline-block;
+}
 .browsehappy {
     margin: 0.2em 0;
     background: #ccc;

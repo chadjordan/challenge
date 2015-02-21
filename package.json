@@ -24,7 +24,8 @@
     "gulp-sequence":"latest",
     "gulp-processhtml":"latest",
     "gulp-uncss":"latest",
-    "gulp-header":"latest"
+    "gulp-header":"latest",
+    "browser-sync":"latest"
   },
   "engines": {
     "node": "latest"
