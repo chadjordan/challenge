@@ -16,12 +16,11 @@
     "gulp-jshint":"latest",
     "gulp-rename":"latest",
     "gulp-notify":"latest",
-     "jshint-stylish": "latest",
-     "gulp-clean": "latest",
-
-
-
-
+    "jshint-stylish": "latest",
+    "gulp-clean": "latest",
+    "gulp-sequence":"latest",
+    "gulp-processhtml":"latest",
+    "gulp-uncss":"latest"
   },
   "engines": {
     "node": "latest"
