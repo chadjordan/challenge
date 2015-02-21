@@ -19,6 +19,7 @@ var uncss = require('gulp-uncss');
 
 
 
+
 gulp.task('clean', function() {
     return gulp.src('build', {
             read: false
@@ -29,11 +30,8 @@ gulp.task('clean', function() {
 gulp.task('lint', function() {
     gulp.src('app/assets/js/**/*.js')
         .pipe(jshint('.jshintrc'))
-        .pipe(jshint.reporter('jshint-stylish'));
+        .pipe(jshint.reporter('jshint-stylish'))
 });
-
-
-
 
 
 gulp.task('images', function() {
@@ -48,6 +46,7 @@ gulp.task('images', function() {
         }))
 
     .pipe(gulp.dest('build/assets/img'))
+
 
 });
 
@@ -112,6 +111,23 @@ gulp.task('compass-deploy', function() {
 
 });
 
+
+gulp.task('copy', function() {
+    return gulp.src([
+            'app/**/',
+            '!app/*.html',
+            '!app/assets/css/**',
+            '!app/assets/js/**',
+            '!app/{assets/sass,assets/sass/**}',
+            '!app/assets/img/**'
+        ], {
+            dot: true
+        }).pipe(gulp.dest('build'))
+        .on('error', notify.onError(function(error) {
+            return "Gulp Error: " + error.message;
+        }));
+});
+
 gulp.task('uncss', function() {
     return gulp.src('app/assets/css/*.css')
         .pipe(uncss({
@@ -128,15 +144,15 @@ gulp.task('uncss', function() {
 });
 
 
+
 gulp.task('watch', function() {
-    // Watch .js files
+
     gulp.watch('app/assets/js/**/*.js', ['lint']);
-    // Watch .scss files
     gulp.watch(['app/assets/sass/*.scss', 'app/assets/img/**/*.*', 'app/assets/img/*.*'], ['compass']);
 });
 
-gulp.task('default', ['compass', 'lint', 'watch']);
+gulp.task('default', ['compass', 'lint','watch']);
 
 gulp.task('build', function(cb) {
-    gulpsequence(['clean', 'images', 'scripts', 'compass-deploy', 'html', 'uncss'])(cb);
+    gulpsequence(['clean', 'images', 'scripts', 'compass-deploy', 'html', 'uncss', 'copy'])(cb);
 });
