@@ -11,14 +11,23 @@ var rename = require('gulp-rename');
 var notify = require("gulp-notify");
 var jshint = require('gulp-jshint');
 var stylish = require('jshint-stylish');
-var clean = require('gulp-clean');
+var clean = require('gulp-rimraf');
 var gulpsequence = require('gulp-sequence');
 var processhtml = require('gulp-processhtml');
 var uncss = require('gulp-uncss');
-
-
-
-
+var header = require('gulp-header');
+var pkg = require('./package.json');
+var banner = [
+        '/*!\n' +
+        ' * <%= pkg.name %>\n' +
+        ' * <%= pkg.description %>\n' +
+        ' * <%= pkg.url %>\n' +
+        ' * @author <%= pkg.author %>\n' +
+        ' * @version <%= pkg.version %>\n' +
+        ' * Copyright ' + new Date().getFullYear() + '. <%= pkg.license %> licensed.\n' +
+        ' */',
+        '\n'
+    ].join('');
 
 gulp.task('clean', function() {
     return gulp.src('build', {
@@ -37,7 +46,7 @@ gulp.task('lint', function() {
 gulp.task('images', function() {
     return gulp.src(['app/assets/img/**/*.*', '!app/assets/img/icons/**/*.*'])
         .pipe(imagemin({
-            optimizationLevel: 4,
+            optimizationLevel: 3,
             progressive: true,
             interlaced: true
         }))
@@ -64,6 +73,7 @@ gulp.task('compass', function() {
         .on('error', notify.onError(function(error) {
             return "Gulp Error: " + error.message;
         }))
+        .pipe(header(banner, {pkg : pkg}))
         .pipe(gulp.dest('app/assets/css'));
 
 });
@@ -71,6 +81,7 @@ gulp.task('compass', function() {
 gulp.task('html', function() {
     return gulp.src('app/*.html')
         .pipe(processhtml())
+        .pipe(header(banner, {pkg : pkg}))
         .pipe(gulp.dest('build'));
 });
 
@@ -86,6 +97,7 @@ gulp.task('scripts', function() {
         .on('error', notify.onError(function(error) {
             return "Gulp Error: " + error.message;
         }))
+        .pipe(header(banner, {pkg : pkg}))
         .pipe(gulp.dest('build/assets/js'));
 });
 
@@ -107,6 +119,7 @@ gulp.task('compass-deploy', function() {
         .on('error', notify.onError(function(error) {
             return "Gulp Error: " + error.message;
         }))
+        .pipe(header(banner, {pkg : pkg}))
         .pipe(gulp.dest('build/assets/css'));
 
 });
@@ -140,6 +153,7 @@ gulp.task('uncss', function() {
         .on('error', notify.onError(function(error) {
             return "Gulp Error: " + error.message;
         }))
+        .pipe(header(banner, {pkg : pkg}))
         .pipe(gulp.dest('build/assets/css'));
 });
 
