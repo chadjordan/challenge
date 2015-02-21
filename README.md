@@ -10,16 +10,18 @@ In one word: automation. The less work you have to do when performing repetitive
 ![alt tag](https://raw.githubusercontent.com/gulpjs/artwork/master/gulp-2x.png)
 
 
-Easy to use
+####Easy to use
 
 By preferring code over configuration, gulp keeps things simple and makes complex tasks manageable.
-Efficient
+
+####Efficient
 
 Using the power of node streams, gulp gives you fast builds that don't write intermediary files to disk.
 High Quality
 
 By enforcing strict plugin guidelines, we ensure that plugins stay simple and work as expected.
-Easy to Learn
+
+####Easy to Learn
 
 Using node best practices and maintaining a minimal API surface, your build works exactly as you would imagine.
 ### What can this do?
@@ -40,7 +42,10 @@ Gulp 3.8.x requires stable Node.js versions >= 0.8.0. Odd version numbers of Nod
 ##Installing the Gulp
 In order to get started, you'll want to install gulp's command line interface (CLI) globally. You may need to use sudo (for OSX, *nix, BSD etc) or run your command shell as Administrator (for Windows) to do this.
 
+```
 $npm install --global gulp
+```
+
 This will put the gulp command in your system path, allowing it to be run from any directory.
 
 
@@ -63,7 +68,7 @@ $sudo gem install sass
 
 ```
 
-This will install Sass and any dependencies for you. It's pretty magical. If you get an error message then it's likely you will need to use the sudo command to install the Sass gem. It would look like:
+This will install Compass and any dependencies for you. It's pretty magical. If you get an error message then it's likely you will need to use the sudo command to install the Sass gem. It would look like:
 ```
 $sudo gem install compass
 
@@ -81,7 +86,7 @@ Go and play. If you're brand new to Sass we've set up some resources to help you
 $ npm install
 
 ```
-###Watch COMPASS/SASS/JS FILE CHANGE
+###Watch Compass/Sass/JS
 ```
 $ gulp
 
