@@ -19,7 +19,7 @@ var header = require('gulp-header');
 var pkg = require('./package.json');
 var banner = [
         '/*!\n' +
-        ' * <%= pkg.name %>\n' +
+        ' * <%= pkg.title %>\n' +
         ' * <%= pkg.description %>\n' +
         ' * <%= pkg.url %>\n' +
         ' * @author <%= pkg.author %>\n' +

@@ -1,5 +1,6 @@
 {
-  "name": "Gulp Front-End Starter Kit",
+  "name": "",
+  "title":"Gulp Front-End Starter Kit",
   "description": "Performing repetitive tasks like minification, compass sass compilation, linting, making your job easier.",
   "version": "0.1.5",
   "author": "Ian Pansensoy",
