@@ -29,8 +29,9 @@ Using node best practices and maintaining a minimal API surface, your build work
 
 * Compiling Compass/Sass
 * CSS and JS minification
-* Strip unused CSS with grunt-uncss
+* Strip unused CSS with uncss
 * Image optimization
+* Multi device testing using browsersync
 
 
 
