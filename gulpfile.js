@@ -84,7 +84,6 @@ gulp.task('compass', function() {
 gulp.task('html', function() {
     return gulp.src('app/*.html')
         .pipe(processhtml())
-        .pipe(header(banner, {pkg : pkg}))
         .pipe(gulp.dest('build'));
 });
 
@@ -184,7 +183,7 @@ gulp.task('serve', ['compass'], function () {
 });
 
 
-gulp.task('default', ['compass', 'lint','serve']);
+gulp.task('default', ['clean','compass', 'lint','serve']);
 
 gulp.task('build', function(cb) {
     gulpsequence(['clean', 'images', 'scripts', 'compass-deploy', 'html', 'uncss', 'copy'])(cb);
