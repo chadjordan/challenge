@@ -2,15 +2,15 @@
 @import "icons/*.png";
 
 @include all-icons-sprites;
-.gulp-bg{
-    background:#cf4646;
-    text-align: center;
 
+.gulp-bg {
+    background: #cf4646;
 }
-.marketing img{
 
+.marketing img {
     display: inline-block;
 }
+
 .browsehappy {
     margin: 0.2em 0;
     background: #ccc;
@@ -31,7 +31,6 @@ body {
     padding-left: 15px;
     padding-right: 15px;
 }
-
 
 /* Custom page header */
 .header {
