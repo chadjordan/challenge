@@ -203,7 +203,6 @@ gulp.task('serve', ['compass'], function() {
 
 
 gulp.task('default', ['clean', 'compass', 'lint', 'serve']);
-
 gulp.task('build', function(cb) {
 	gulpsequence(['clean', 'images', 'scripts', 'compass-deploy', 'html', 'uncss', 'copy'])(cb);
 });
