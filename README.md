@@ -50,7 +50,7 @@ $npm install --global gulp
 This will put the gulp command in your system path, allowing it to be run from any directory.
 
 
-##Installing the SASS AND COMPAS
+##Installing the SASS AND COMPASS
 Linux
 If you're using a distribution of Linux, you'll need to install Ruby first. You can install Ruby through the apt package manager, rbenv, or rvm.
 Windows
