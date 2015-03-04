@@ -1,0 +1,34 @@
+{
+  "name": "",
+  "title":"Gulp Front-End Starter Kit",
+  "description": "Performing repetitive tasks like minification, compass sass compilation, linting, making your job easier.",
+  "version": "0.1.5",
+  "author": "Ian Pansensoy",
+  "copyright": "2014",
+  "license":"MIT",
+  "url":"http://aindevonsire.com",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "latest",
+    "gulp-autoprefixer": "latest",
+    "gulp-concat": "latest",
+    "gulp-imagemin": "latest",
+    "gulp-minify-css": "latest",
+    "gulp-compass": "latest",
+    "gulp-uglify": "latest",
+    "gulp-jshint":"latest",
+    "gulp-rename":"latest",
+    "gulp-notify":"latest",
+    "jshint-stylish": "latest",
+    "gulp-rimraf": "latest",
+    "gulp-sequence":"latest",
+    "gulp-processhtml":"latest",
+    "gulp-uncss":"latest",
+    "gulp-header":"latest",
+    "browser-sync":"latest"
+
+},
+  "engines": {
+    "node": "latest"
+  }
+}
