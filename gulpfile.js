@@ -183,7 +183,7 @@ gulp.task('serve', ['compass'], function() {
 	browserSync({
 		notify: false,
 		port: 9002,
-		browser: ["chrome", "firefox"],
+		browser: ["chrome", ,"google-chrome", "firefox"],
 		ui: {
 			port: 9003
 		},
