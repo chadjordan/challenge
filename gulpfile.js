@@ -164,7 +164,7 @@ gulp.task('copy', function() {
 gulp.task('uncss', function() {
     return gulp.src('app/assets/css/*.css')
         .pipe(uncss({
-            html: ['app/*.html','app/*.php']
+            html: ['app/*.php','app/*html']
         }))
         .on('error', notify.onError(function(error) {
             return "Gulp Error: " + error.message;
