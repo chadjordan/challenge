@@ -1,34 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Gulp Front-End Starter Kit</title>
-    <link href="assets/vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- build:css assets/css/main.min.css -->
-    <link href="assets/css/main.css" rel="stylesheet">
-    <!-- /build -->
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-  <![endif]-->
-
-</head>
-
-<body>
-    <!--[if lt IE 10]>
-  <p class="browsehappy">
-    You are using an <strong>outdated</strong> browser. Please
-    <a href="http://browsehappy.com/">upgrade your browser</a> to improve
-    your experience.
-  </p>
-<![endif]-->
+<?php include 'includes/header.php';?>
     <div class="container">
         <nav class=" navbar navbar-default navbar-fixed-top">
             <div class="container">
@@ -74,6 +45,7 @@
         </nav>
 
         <div class="jumbotron">
+
             <h1>Allo Allo !</h1>
             <p class="lead">Always a pleasure scaffolding your apps.</p>
             <p><a class="btn btn-lg btn-success" href="#">Splendid! <span class="glyphicon glyphicon-ok"></span></a>
@@ -87,6 +59,7 @@
                     <img class="img-responsive" style="height:180px" height="180" width="180" src="http://gulpjs.com/img/gulp-white-text.svg" alt="gulp js">
                 </div>
                 <h4>Gulp JS</h4>
+
                 <p>Gulp is a fast and intuitive streaming build tool built on Node.js.</p>
             </div>
             <div class="col-lg-3 col-xs-12">
@@ -116,15 +89,7 @@
             </div>
         </div>
 
-        <div class="footer">
 
-        </div>
 
     </div>
-    <!-- build:js assets/js/app.min.js -->
-    <script src="assets/js/main.js"></script>
-    <!-- /build -->
-
-</body>
-
-</html>
+    <?php include 'includes/footer.php';?>
