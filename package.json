@@ -25,7 +25,9 @@
     "gulp-processhtml":"latest",
     "gulp-uncss":"latest",
     "gulp-header":"latest",
-    "browser-sync":"latest"
+    "browser-sync":"latest",
+    "http-proxy":"latest",
+    "gulp-connect-php":"latest"
 
 },
   "engines": {
