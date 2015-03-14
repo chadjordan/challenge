@@ -162,9 +162,9 @@ gulp.task('copy', function() {
 });
 
 gulp.task('uncss', function() {
-    return gulp.src('app/assets/css/*.css')
+    return gulp.src('app/assets/css/main.min.css')
         .pipe(uncss({
-            html: ['app/*.php','app/*html']
+            html: ['app/**/*.php','app/**/*.html']
         }))
         .on('error', notify.onError(function(error) {
             return "Gulp Error: " + error.message;
