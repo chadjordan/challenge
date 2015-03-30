@@ -12,7 +12,7 @@
     "gulp": "latest",
     "gulp-autoprefixer": "latest",
     "gulp-concat": "latest",
-    "gulp-imagemin": "latest",
+    "gulp-imagemin": "1.0.0",
     "gulp-minify-css": "latest",
     "gulp-compass": "latest",
     "gulp-uglify": "latest",
