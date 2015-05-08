@@ -1,12 +1,5 @@
 @import "mixins";
-@import "icons/*.png";
-
-@include all-icons-sprites;
-
-.gulp-bg {
-    background: #cf4646;
-    text-align: center;
-}
+@import "_sprites";
 
 .marketing img {
     display: inline-block;

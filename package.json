@@ -13,8 +13,9 @@
     "gulp-autoprefixer": "latest",
     "gulp-concat": "latest",
     "gulp-imagemin": "latest",
+    "gulp-sass": "latest",
+    "gulp-sourcemaps": "latest",
     "gulp-minify-css": "latest",
-    "gulp-compass": "latest",
     "gulp-uglify": "latest",
     "gulp-jshint":"latest",
     "gulp-rename":"latest",
@@ -23,11 +24,14 @@
     "gulp-rimraf": "latest",
     "gulp-sequence":"latest",
     "gulp-processhtml":"latest",
+    "imagemin-pngquant":"latest",
     "gulp-uncss":"latest",
     "gulp-header":"latest",
     "browser-sync":"latest",
     "http-proxy":"latest",
-    "gulp-connect-php":"latest"
+    "gulp-connect-php":"latest",
+    "gulp.spritesmith": "latest"
+
 
 },
   "engines": {
