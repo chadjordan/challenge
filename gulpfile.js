@@ -236,5 +236,5 @@ gulp.task('serve', ['sass'], function() {
 
 gulp.task('default', ['clean', 'sprite','sass', 'lint', 'serve','sprite']);
 gulp.task('build', function(cb) {
-	gulpsequence(['clean', 'images', 'scripts', 'sass-deploy', 'html', 'uncss', 'copy'])(cb);
+	gulpsequence(['clean', 'sprite', 'images', 'scripts', 'sass-deploy', 'html', 'uncss', 'copy'])(cb);
 });
