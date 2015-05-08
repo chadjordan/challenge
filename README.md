@@ -27,7 +27,7 @@ Using node best practices and maintaining a minimal API surface, your build work
 ### What can this do?
 
 
-* Compiling Compass/Sass
+* Compiling Sass
 * CSS and JS minification
 * Strip unused CSS with uncss
 * Image optimization
@@ -50,7 +50,7 @@ $npm install --global gulp
 This will put the gulp command in your system path, allowing it to be run from any directory.
 
 
-##Installing the SASS AND COMPASS
+##Installing the SASS
 Linux
 If you're using a distribution of Linux, you'll need to install Ruby first. You can install Ruby through the apt package manager, rbenv, or rvm.
 Windows
@@ -69,11 +69,6 @@ $sudo gem install sass
 
 ```
 
-This will install Compass and any dependencies for you. It's pretty magical. If you get an error message then it's likely you will need to use the sudo command to install the Sass gem. It would look like:
-```
-$sudo gem install compass
-
-```
 Double-check. You should now have Sass installed, but it never hurts to double-check. In your terminal application you can type:
 ```
 $sass -v
