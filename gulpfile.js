@@ -3,7 +3,6 @@ var gulp = require('gulp');
 var autoprefixer = require('gulp-autoprefixer');
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
-var compass = require('gulp-compass');
 var imagemin = require('gulp-imagemin');
 var minifycss = require('gulp-minify-css');
 var rename = require('gulp-rename');
