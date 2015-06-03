@@ -56,7 +56,7 @@
 
             <div class="col-lg-3 col-xs-12">
                 <div class="gulp-bg">
-                    <img class="img-responsive" style="height:180px" height="180" width="180" src="http://gulpjs.com/img/gulp-white-text.svg" alt="gulp js">
+                    <img class="img-responsive" style="height:180px" height="180" width="180" src="assets/img/gulp.jpg" alt="gulp js">
                 </div>
                 <h4>Gulp JS</h4>
 
@@ -64,14 +64,14 @@
             </div>
             <div class="col-lg-3 col-xs-12">
                 <div>
-                    <img class="img-responsive" height="180" width="180" src="http://html5boilerplate.com/apple-touch-icon.png" alt="HTML5 Boilerplate">
+                    <img class="img-responsive" height="180" width="180" src="assets/img/boilerplate.png" alt="HTML5 Boilerplate">
                 </div>
                 <h4>HTML5 Boilerplate</h4>
                 <p>HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.</p>
             </div>
             <div class="col-lg-3 col-xs-12">
                 <div>
-                    <img height="180" width="180" src="http://baltimorewebdesigngroup.org/assets/img/logo.png" alt="Sass-Lang">
+                    <img height="180" width="180" src="assets/img/sass.png" alt="Sass-Lang">
                 </div>
                 <h4>Sass</h4>
                 <p>Sass is a mature, stable, and powerful professional grade CSS extension language.</p>
@@ -81,7 +81,7 @@
 
             <div class="col-lg-3 col-xs-12">
                 <div>
-                    <img class="img-responsive" height="180" width="180" src="http://www.teamstudio.com/Portals/218295/images/bootstrap-logo.png" alt="Bootstrap">
+                    <img class="img-responsive" height="180" width="180" src="assets/img/bootstrap.jpg" alt="Bootstrap">
 
                 </div>
                 <h4>Bootstrap</h4>
