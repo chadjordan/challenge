@@ -91,3 +91,21 @@ $ gulp
 ```
 $ gulp build
 
+###Installing php-cgi
+##OSX
+
+The php-cgi binary can be installed via Homebrew by tapping the homebrew-php repository:
+
+brew tap homebrew/dupes
+brew tap josegonzalez/homebrew-php
+brew install php54
+
+##Windows
+
+The php-cgi binary can be installed via XAMPP. Here is how you can add the binary to your PATH: Link
+
+##Ubuntu
+
+```
+$sudo apt-get install php5-cgi
+```
