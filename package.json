@@ -14,7 +14,6 @@
     "gulp-concat": "latest",
     "gulp-imagemin": "latest",
     "gulp-sass": "latest",
-    "gulp-sourcemaps": "latest",
     "gulp-minify-css": "latest",
     "gulp-uglify": "latest",
     "gulp-jshint":"latest",

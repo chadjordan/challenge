@@ -20,7 +20,6 @@ var httpProxy = require('http-proxy');
 var connect = require('gulp-connect-php');
 var pngquant = require('imagemin-pngquant');
 var sass         = require('gulp-sass');
-var sourcemaps   = require('gulp-sourcemaps');
 var spritesmith = require('gulp.spritesmith');
 
 var reload = browserSync.reload;
@@ -78,12 +77,10 @@ gulp.task('images', function() {
 
 gulp.task('sass', function () {
 	return gulp.src('app/assets/sass/*.scss')
-	.pipe(sourcemaps.init())
 	.pipe(sass())
 	.on('error', notify.onError(function(error) {
 		  return "Gulp Error: " + error.message;
 	  }))
-	.pipe(sourcemaps.write())
 	.pipe(autoprefixer('last 2 version', 'safari 5', 'ie 7', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))
 	.pipe(header(banner, {
 			pkg: pkg
@@ -93,12 +90,10 @@ gulp.task('sass', function () {
 
 gulp.task('sass-deploy', function () {
 	return gulp.src('app/assets/sass/*.scss')
-	.pipe(sourcemaps.init())
 	.pipe(sass())
 	.on('error', notify.onError(function(error) {
 		  return "Gulp Error: " + error.message;
 	  }))
-	.pipe(sourcemaps.write())
 	.pipe(autoprefixer('last 2 version', 'safari 5', 'ie 7', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))
 	.pipe(header(banner, {
 			pkg: pkg
