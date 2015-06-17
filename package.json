@@ -25,12 +25,13 @@
     "gulp-sequence":"latest",
     "gulp-processhtml":"latest",
     "imagemin-pngquant":"latest",
-    "gulp-uncss":"latest",
+    "gulp-uncss-sp":"latest",
     "gulp-header":"latest",
     "browser-sync":"latest",
     "http-proxy":"latest",
     "gulp-connect-php":"latest",
-    "gulp.spritesmith": "latest"
+    "gulp.spritesmith": "latest",
+    "glob":"latest"
 
 
 },

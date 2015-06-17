@@ -8,7 +8,7 @@
     <link href="assets/vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- build:css assets/css/main.min.css -->
-    <link href="assets/css/main.css" rel="stylesheet">
+        <link href="assets/css/main.css" rel="stylesheet">
     <!-- /build -->
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->

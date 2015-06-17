@@ -1,6 +1,10 @@
 @import "mixins";
 @import "_sprites";
 
+.test-class {
+    text-align: center;
+}
+
 .marketing img {
     display: inline-block;
 }
@@ -53,7 +57,7 @@ body {
 .jumbotron {
     text-align: center;
     margin-top: 50px;
-    border-bottom: 1px solid #e5e5e5;
+    border-bottom: 1px solid #ededed;
     .btn {
         font-size: 21px;
         padding: 14px 24px;

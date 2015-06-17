@@ -46,7 +46,7 @@
 
         <div class="jumbotron">
 
-            <h1>Allo Allo !</h1>
+            <h1>Allo Allo  Allo!</h1>
             <p class="lead">Always a pleasure scaffolding your apps.</p>
             <p><a class="btn btn-lg btn-success" href="#">Splendid! <span class="glyphicon glyphicon-ok"></span></a>
             </p>
