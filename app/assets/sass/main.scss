@@ -1,0 +1,32 @@
+/*----- FONTS-------
+----------------------*/
+@import "fonts";
+
+/*-----VARIABLES----
+-----------------------*/
+@import "variables";
+
+/*-----MIX-INS AND PLACEHOLDER -------
+-----------------------*/
+@import "mixins";
+@import "placeholders";
+
+/*-----SPRITES-------
+-----------------------*/
+@import "sprites";
+
+/*----- VENDORS-------
+----------------------*/
+@import "../vendors/bootstrap/css/bootstrap";
+
+/*-----LAYOUTS-------
+-----------------------*/
+@import "layouts/header";
+@import "layouts/footer";
+
+/*-----MODULES-------
+-----------------------*/
+
+/*-----PAGES-------
+-----------------------*/
+@import "pages/home";
