@@ -20,7 +20,6 @@ var httpProxy = require('http-proxy');
 var connect = require('gulp-connect-php');
 var pngquant = require('imagemin-pngquant');
 var sass = require('gulp-sass');
-var sourcemaps = require('gulp-sourcemaps');
 var spritesmith = require('gulp.spritesmith');
 var glob = require('glob');
 
@@ -79,12 +78,10 @@ gulp.task('images', function() {
 
 gulp.task('sass', function() {
     return gulp.src('app/assets/sass/*.scss')
-        .pipe(sourcemaps.init())
         .pipe(sass())
         .on('error', notify.onError(function(error) {
             return "Gulp Error: " + error.message;
         }))
-        .pipe(sourcemaps.write())
         .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 7', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))
         .pipe(header(banner, {
             pkg: pkg
@@ -209,6 +206,41 @@ gulp.task('serve', ['sass'], function() {
     gulp.watch(['app/assets/sass/**/*.scss'], ['sass', reload]);
     gulp.watch(['app/assets/js/**/*.js'], ['lint', reload]);
     gulp.watch(['app/assets/img/**/*.*'], ['sass', reload]);
+
+
+});
+
+gulp.task('serve-dist', ['build'], function() {
+    connect.server({
+        port: 9001,
+        base: 'build',
+        open: false
+    });
+
+    var proxy = httpProxy.createProxyServer({});
+
+    browserSync({
+        notify: false,
+        port: 9000,
+
+        server: {
+            baseDir: ['build'],
+
+            middleware: function(req, res, next) {
+                var url = req.url;
+
+                if (!url.match(/^\/(css|fonts)\//)) {
+                    proxy.web(req, res, {
+                        target: 'http://127.0.0.1:9001'
+                    });
+                } else {
+                    next();
+                }
+            }
+        }
+    })
+
+
 
 
 });

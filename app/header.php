@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Gulp Front-End Starter Kit</title>
-    <link href="assets/vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- build:css assets/css/main.min.css -->
         <link href="assets/css/main.css" rel="stylesheet">

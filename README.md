@@ -87,6 +87,12 @@ $ npm install
 $ gulp
 
 ```
+
+###Serve Build
+```
+$ gulp serve-dist
+
+```
 ###Build Release
 ```
 $ gulp build
