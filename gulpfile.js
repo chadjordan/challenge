@@ -156,7 +156,29 @@ gulp.task('sprite', function() {
 gulp.task('uncss', function() {
     return gulp.src('app/assets/css/main.css')
         .pipe(uncss({
-            html: glob.sync('app/**/*.php', 'app/**/*.html')
+            html: glob.sync('app/**/*.php', 'app/**/*.html'),
+            ignore: [
+
+
+                        /\.open/,
+                         /(#|\.)fancybox(\-[a-zA-Z]+)?/,
+                        /(#|\.)active(\-[a-zA-Z]+)?/,
+                        /(#|\.)modal(\-[a-zA-Z]+)?/,
+                        // Bootstrap selectors added via JS
+                        /\w\.in/,
+                        ".fade",
+                        ".collapse",
+                        ".collapsing",
+                        /(#|\.)navbar(\-[a-zA-Z]+)?/,
+                        /(#|\.)dropdown(\-[a-zA-Z]+)?/,
+                        /(#|\.)(open)/,
+                        /^\.scroll(\-)?/,
+                        /^\.scrollbar(\-)?/,
+                       // currently only in a IE conditional, so uncss doesn't see it
+                        ".close",
+                        ".alert-dismissible"
+
+                    ]
         }))
         .on('error', notify.onError(function(error) {
             return "Gulp Error: " + error.message;
