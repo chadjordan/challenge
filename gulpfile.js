@@ -157,7 +157,8 @@ gulp.task('uncss', function() {
     return gulp.src('app/assets/css/main.css')
         .pipe(uncss({
             html: glob.sync('app/**/*.php', 'app/**/*.html'),
-            ignore: [
+
+             ignore: [
 
 
                         /\.open/,
