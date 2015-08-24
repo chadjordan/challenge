@@ -3,7 +3,7 @@
 
     <div class="splsh">
         <fieldset>
-            <legend><span>AAA</span>DISCOVERY</legend> 
+            <legend><span>APD</span>DISCOVERY</legend> 
 
             <div class="bnrCnt">
                 <h1> Blog Insights </h1>
