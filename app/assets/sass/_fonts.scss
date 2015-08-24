@@ -1,28 +1,16 @@
+
+
 @font-face {
-    font-family: 'eurostileregular';
-    src: url("../fonts/Eurostile-webfont.eot");
-    src: url("../fonts/Eurostile-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Eurostile-webfont.woff2") format("woff2"), url("../fonts/Eurostile-webfont.woff") format("woff"), url("../fonts/Eurostile-webfont.ttf") format("truetype"), url("../fonts/Eurostile-webfont.svg#eurostileregular") format("svg");
+    font-family: 'AvenirReg';
+    src: url("../fonts/avenir/AvenirNextLTPro-Regular.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
 }
 
-
 @font-face {
-    font-family: 'JuraRegular';
-    src: url("../fonts/jura/Jura-Regular.ttf") format("truetype");
-}
-
-
-@font-face {
-    font-family: 'JuraBold';
-    src: url("../fonts/jura/Jura-DemiBold.ttf") format("truetype");
-}
-
-
-@font-face {
-    font-family: 'bebas-neue';
-    src: url("../fonts/bebasneue-webfont.eot");
-    src: url("../fonts/bebasneue-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/bebasneue-webfont.woff") format("woff"), url("../fonts/bebasneue-webfont.ttf") format("truetype"), url("../fonts/bebasneue-webfont.svg#BebasNeueRegular") format("svg");
+    font-family: 'AvenirBld';
+    src: url("../fonts/avenir/AvenirNextLTPro-Bold.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
 }
+
